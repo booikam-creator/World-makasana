@@ -17,9 +17,19 @@ import { AppComponent } from './app.component';
 
 
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { BottombarComponent } from './components/bottombar/bottombar.component';
+import { HomeComponent } from './pages/home/home.component';
+import { SignupComponent } from './pages/signup/signup.component';
+import { AcountComponent } from './pages/acount/acount.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
+    BottombarComponent,
+    HomeComponent,
+    SignupComponent,
+    AcountComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
