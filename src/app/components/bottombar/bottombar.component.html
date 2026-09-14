@@ -1,10 +1,10 @@
-
 <div class="bottom-nav-container">
         <div class="bottom-nav-pill bg-dark text-white">
                 <!-- Active Item: Home -->
                 <a href="#" class="nav-item-btn active" title="Home">
-                        <div class="d-flex justify-content-center rounded-circle align-items-center h-100 w-100" [ngClass]="{'bg-white text-black':currentUrl === 'home'} ">
-                                <svg xmlns="http://www.w3.org/2000/svg"  width="1.1em" height="1.1em"
+                        <div class="d-flex justify-content-center rounded-circle align-items-center h-100 w-100"
+                                [ngClass]="{'bg-white text-black':currentUrl === 'home'} ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.1em" height="1.1em"
                                         viewBox="0 0 20 20">
                                         <path d="M0 0h20v20H0z" fill="none" />
                                         <path fill="currentColor"
@@ -16,7 +16,8 @@
 
 
                         <div class=" rounded-circle d-flex justify-content-center align-items-center h-100 w-100">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mt" width="1em" height="1em" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mt" width="1em" height="1em"
+                                        viewBox="0 0 16 16">
                                         <path d="M0 0h16v16H0z" fill="none" />
                                         <path fill="currentColor"
                                                 d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z" />
@@ -42,7 +43,8 @@
                 </a>
 
                 <!-- Cart / Orders -->
-                <a href="#" class="nav-item-btn" title="Bag">
+                <a class="nav-item-btn" title="Bag" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight">
 
                         <div
                                 class="rounded-circle d-flex justify-content-center align-items h-100 w-100 align-items-center ">
@@ -51,4 +53,48 @@
                         </div>
                 </a>
         </div>
+</div>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header border-bottom d-flex justify-content-between">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Cart</h5>
+                <button type="button" class="btn span br border" data-bs-dismiss="offcanvas">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                                class="bi me-1 bi-x" viewBox="0 0 16 16">
+                                <path
+                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                        </svg>
+                        <span>close</span>
+                </button>
+
+        </div>
+        <div class="py-3 container">
+                <span class="text span">You have 5 items in the basket</span>
+        </div>
+
+        <div class="offcanvas-body">
+                <div class="row">
+                        <div class="col-4">
+                                <div class="bg p-2">
+                                        <img src="https://i.postimg.cc/9QzTPZYX/silo-product-image-v2-17Apr2025-180101-6009188007430-Straight-on-311983-107-400Wx400H.jpg"
+                                                alt="" class="w-100 cart-img">
+                                </div>
+                        </div>
+                        <div class="col">
+                                <div class="d-flex">
+                                        <div class="col">
+                                          <h6 class="cart-title">Maggi Durban Curry 2 Minute Instant Noodles 5 x 68g</h6>
+                                        </div>
+                                        <div class="col-2">
+                                                <div class="d-flex justify-content-end" >
+                                                
+                                                <i class="bi i bi-x"></i>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
 </div>

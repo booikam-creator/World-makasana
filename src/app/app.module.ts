@@ -23,7 +23,8 @@ import { SignupComponent } from './pages/signup/signup.component';
 import { AcountComponent } from './pages/acount/acount.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
-import { SiginComponent } from './componets/sigin/sigin.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,7 @@ import { SiginComponent } from './componets/sigin/sigin.component';
     SignupComponent,
     AcountComponent,
     NavbarComponent,
-    SiginComponent,
+    
   ],
   imports: [
     BrowserModule,
