@@ -12,7 +12,8 @@
                         d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                 </svg>
             </div>
-            <button type="button" class="btn text-white bg-navy">
+            <button type="button" class="btn text-white bg-navy" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
                 Log in
             </button>
 
@@ -28,5 +29,32 @@
         <span class="input-group-text bg-dark border-dark text-white rounded-circle " id="inputGroup-sizing-lg">
             <i class="bi bi-search"></i>
         </span>
+    </div>
+</div>
+
+
+
+<div class="offcanvas off pt-3 offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
+    aria-labelledby="offcanvasBottomLabel">
+
+    <div class="container">
+
+
+        <p class="text mb-4">Existing Customers</p>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control-1" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address*</label>
+        </div>
+        <div class="form-floating">
+            <input type="password" class="form-control-1" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+        </div>
+
+        <button type="button" class="btn mb-2 text-white w-100 py-2 bg-navy">LOG IN</button>
+        <span>By using this website and/or placing an order you agree to the Terms & Conditions of MAKAZANA & CO.</span>
+        <div class="mt-5">
+            <h6 class="text">New Customers</h6>
+            <button type="button" class="btn mb-3 bg-navy w-100 py-2 bg-light">REGISTER NOW</button>
+        </div>
     </div>
 </div>
