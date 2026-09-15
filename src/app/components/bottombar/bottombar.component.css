@@ -1,7 +1,10 @@
 .logo {
     width: 100px;
 }
-
+.sum{
+    width: 25px;
+    height: 25px;
+}
 .nav-item-btn {
     width: 45px;
     height: 45px;
