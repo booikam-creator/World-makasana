@@ -1,22 +1,35 @@
 button,
-span {
+span,
+h5 {
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
 }
+
+::-webkit-scrollbar {
+      width: 0px;               /* Width of vertical scrollbar */
+        height: 0px;              /* Height of horizontal scrollbar */
+     }
+
 
 .br {
     border-radius: 30px 30px;
 }
 
-.bg-navy, button {
+.bg-navy,
+button {
     background: #191970;
     border-radius: 20px;
     font-size: 14px;
 }
-.icon{
-    width:20px;
-    height:20px;
+
+.icon {
+    width: 20px;
+    height: 20px;
 }
-.over{
+
+.over {
     overflow-x: auto;
+}
+.span{
+    font-size:14px;
 }
