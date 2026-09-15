@@ -1,0 +1,22 @@
+button,
+span {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+}
+
+.br {
+    border-radius: 30px 30px;
+}
+
+.bg-navy, button {
+    background: #191970;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.icon{
+    width:20px;
+    height:20px;
+}
+.over{
+    overflow-x: auto;
+}
