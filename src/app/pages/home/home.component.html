@@ -33,10 +33,24 @@
         <h6 class="text">LOCAL FLAVOUR</h6>
         <span class="span text-secondary">See All</span>
     </div>
-    <div class="bg rounded w-100">
-        <div class="d-flex">
-            <div class="shop-logo">
-                <img src="https://i.postimg.cc/qBmBLr6Q/1789483061963.jpg" alt="" class="w-100 h-100 rounded">
+    <div class="d-flex over " >
+
+
+        <div class="bg-cover me-2 col-12 rounded " *ngFor="let shop of shopList"
+            [ngStyle]="{ 'background-image': 'url(' + shop.cover + ')' }">
+            <div class="contain h-100 w-100 flex-column align-items-end d-flex">
+                <div class="d-flex container justify-content-between pt-2">
+                    <div class="bg-white rounded-5 px-2">
+                        <div class="main-span">30 min</div>
+                    </div>
+                    <div class="bg-white main-span rounded-5 px-2">
+                        <i class="bi text-warning me-1 bi-star-fill"></i>
+                        <span class="main-span text-secondary">4.3</span>
+                    </div>
+                </div>
+                <div class="box border-start border-end border-bottom mt-auto rounded-bottom py-3 container d-flex">
+                    <h6 class="text mb-0 ">{{shop.name}}</h6>
+                </div>
             </div>
         </div>
     </div>

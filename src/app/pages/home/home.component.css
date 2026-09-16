@@ -4,19 +4,40 @@ h6 {
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
 }
-.shop-logo{
+
+.shop-logo {
     width: 50px;
     height: 50px;
 }
-.bg {
-    background-image: url('https://i.postimg.cc/rwBZqzY2/1789483155738.jpg');
 
+.bg-cover {
     background-repeat: no-repeat;
     background-position: center;
-    background-size:cover;
-    min-height: 200px;
+    background-size: cover;
+    height: 230px;
+
 
 }
+
+
+.bg-logo {
+
+    overflow: hidden;
+    width: 35px;
+    height: 35px;
+}
+
+.main-img {
+    width: 50px;
+    height: 50px;
+}
+
+.box {
+    background-image: linear-gradient(to top, white 60%, transparent);
+    
+}
+
+
 
 ::-webkit-scrollbar {
     width: 0px;
@@ -48,4 +69,7 @@ button {
 
 .span {
     font-size: 14px;
+}
+.main-span{
+    font-size:10px;
 }
