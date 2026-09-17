@@ -1,13 +1,17 @@
 .logo {
     width: 100px;
 }
+.w-60{
+    width:60%;
+}
 .sum{
     width: 25px;
+    
     height: 25px;
 }
 .nav-item-btn {
     width: 45px;
-    height: 45px;
+    height: 44px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -18,13 +22,11 @@
     transition: all 0.3s ease;
 }
 
-.bottom-nav-container {
-    position: fixed;
-    bottom: 25px;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
+
+.nav-2{
+    position: none;
+}
 .bottom-nav-pill {
 
     /* Dark pill background */

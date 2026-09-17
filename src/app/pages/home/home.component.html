@@ -1,5 +1,5 @@
 <app-navbar></app-navbar>
-<div class="container">
+<div class="container bg-white">
     <div class="d-flex over text-nowrap  py-3 ">
         <button type="button" class="btn bg-navy text-white me-2 px-3">All</button>
         <button type="button" class="btn border br px-1 d-flex bg-white me-2">
@@ -29,14 +29,18 @@
 
 
     </div>
+    <img src="https://i.postimg.cc/zBgqZK98/Blue-White-Clean-Minimalist-Delivery-Food-Apps-Service-Video-You-Tube-Thumbnail.png"
+        alt class="mb-3 w-100 rounded">
     <div class="py d-flex justify-content-between">
         <h6 class="text">LOCAL FLAVOUR</h6>
         <span class="span text-secondary">See All</span>
     </div>
-    <div class="d-flex over " >
+
+    <div class="d-flex mb-3 over ">
 
 
-        <div class="bg-cover col-12 rounded " [ngClass]="{'me-2' :  !isLast }" *ngFor="let shop of shopList;let isFirst = first; let isLast = last"
+        <div class="bg-cover col-12 rounded " [ngClass]="{'me-2' :  !isLast }"
+            *ngFor="let shop of shopList;let isFirst = first; let isLast = last"
             [ngStyle]="{ 'background-image': 'url(' + shop.cover + ')' }">
             <div class="contain h-100 w-100 flex-column align-items-end d-flex">
                 <div class="d-flex container justify-content-between pt-2">
@@ -54,5 +58,34 @@
             </div>
         </div>
     </div>
+    <div class="py d-flex justify-content-between">
+        <h6 class="text">QUICK CRUNCHY </h6>
+
+    </div>
+    <div class="contain ">
+
+
+        <div class="row mb-2">
+            <div class="col-6">
+                <div class="shadow bg-white rounded p-2">
+                    <div class="px-3 py-2">
+                        <img src="https://i.postimg.cc/9QzTPZYX/silo-product-image-v2-17Apr2025-180101-6009188007430-Straight-on-311983-107-400Wx400H.jpg"
+                            alt="" class="w-100 mb-2 cart-img">
+                    </div>
+
+
+                    <h6 class="product-title mb-2 text-center">Maggi Durban Curry 2 Minute Instant
+                        Noodles 5 x 68g</h6>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h6 class="mb-0"><span class="main-span">R</span> 70.00</h6>
+                        <button type="button" class="btn text-white d-flex align-items-center p-0 justify-content-center add-cart bg-navy">
+                            <h6 class="mb-0">+</h6>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 <app-bottombar></app-bottombar>

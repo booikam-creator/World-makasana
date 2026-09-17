@@ -16,6 +16,9 @@ export class HomeComponent {
     {
       name:'Goldern Dash',
       cover:'https://i.postimg.cc/KjSBxcVj/cm6i5aq1k000003lebrgq2ki9.jpg'
+    },{
+      name:'Rands Cape Town',
+      cover:'https://i.postimg.cc/s2Lv4DHb/1789571627911.jpg'
     }
   ]
 }
