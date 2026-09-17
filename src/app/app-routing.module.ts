@@ -4,12 +4,14 @@ import { HomeComponent } from './pages/home/home.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { AcountComponent } from './pages/acount/acount.component';
 import { signinGuard } from './guards/signin.guard';
+import { StoreComponent } from './pages/store/store.component';
 
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'signup', component: SignupComponent },
+  {path:'store/:name', component:StoreComponent},
   {
     path: 'account',
     canActivate: [signinGuard],

@@ -39,7 +39,7 @@
     <div class="d-flex mb-3 over ">
 
 
-        <div class="bg-cover col-12 rounded " [ngClass]="{'me-2' :  !isLast }"
+        <div class="bg-cover col-12 rounded" routerLink="/store/{{shop.name}}" [ngClass]="{'me-2' :  !isLast}"
             *ngFor="let shop of shopList;let isFirst = first; let isLast = last"
             [ngStyle]="{ 'background-image': 'url(' + shop.cover + ')' }">
             <div class="contain h-100 w-100 flex-column align-items-end d-flex">
