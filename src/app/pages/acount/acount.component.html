@@ -2,9 +2,18 @@
     <div class="shadow container bg-white rounded-3 py-3">
         <div class="row align-items-center">
             <div class="col-3">
-                <img src="https://i.postimg.cc/D0Wmx44s/1780680388958.jpg" class="rounded-circle img"
-                    alt="User Profile " style=" object-fit: cover;">
+                <div class="d-">
 
+                    <img src="https://i.postimg.cc/D0Wmx44s/1780680388958.jpg" class="rounded-circle img"
+                        alt="User Profile " style=" object-fit: cover;">
+
+                    <div class="h-0 d-flex justify-content-end ">
+                        <div class="icon-edit d-flex justify-content-center align-items-center rounded-circle font bg-white shadow">
+                        
+                        <i class="bi p-2 bi-pencil-square"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col">
                 <h6>{{user.name| titlecase}}</h6>
@@ -90,11 +99,13 @@
 
         <div class="container">
             <div class="d-flex mb-2 align-items-center">
-                <div class="icon rounded-circle me-3 text-danger bg-light d-flex justify-content-center align-items-center ">
+                <div
+                    class="icon rounded-circle me-3 text-danger bg-light d-flex justify-content-center align-items-center ">
                     <i class="bi bi-box-arrow-right"></i>
                 </div>
                 <p class="span text-black mb-0">Log out</p>
             </div>
         </div>
     </div>
+    <app-bottombar></app-bottombar>
 </div>
