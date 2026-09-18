@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'signup', component: SignupComponent },
   {path:'store/:name', component:StoreComponent},
+  {path:'account', component:AcountComponent},
   {
     path: 'account',
     canActivate: [signinGuard],
