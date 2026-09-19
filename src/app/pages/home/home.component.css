@@ -1,6 +1,4 @@
-button,
-span,
-h6 {
+.text {
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
 }
@@ -9,36 +7,31 @@ h6 {
     width: 50px;
     height: 50px;
 }
-
-.product-title {
-    font-size: 10px;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+.main{
+    height: 0px;
+    width:0px;
 }
-
-.bg-cover {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 230px;
-
-
-}
-
-
-.bg-logo {
-
-    overflow: hidden;
-    width: 35px;
-    height: 35px;
-}
-
 .main-img {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    position:relative;
+    left:20px;
+    top:-25px;
+
 }
+.card-main{
+height: 100px;
+overflow: hidden;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    /* Spacing between columns/rows */
+}
+
+
+
 
 .box {
     background-image: linear-gradient(to top, white 60%, transparent);
@@ -47,43 +40,9 @@ h6 {
 
 
 
-::-webkit-scrollbar {
-    width: 0px;
-    /* Width of vertical scrollbar */
-    height: 0px;
-    /* Height of horizontal scrollbar */
-}
-
-
-.br {
-    border-radius: 30px 30px;
-}
 
 .bg-navy,
 button {
     background: #191970;
     border-radius: 20px;
-    font-size: 14px;
-}
-
-.icon {
-    width: 20px;
-    height: 20px;
-}
-
-.over {
-    overflow-x: auto;
-}
-
-.span {
-    font-size: 14px;
-}
-
-.main-span {
-    font-size: 10px;
-}
-
-.add-cart {
-    width: 30px;
-    height: 30px;
 }
