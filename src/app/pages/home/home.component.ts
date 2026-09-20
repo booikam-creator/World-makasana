@@ -7,6 +7,26 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  categoryList =[
+    {
+      name:'eats',
+      image:'https://i.postimg.cc/rpTzG50n/1000093962-removebg-preview.png'
+    },
+    {
+      name:'grocery',
+      image:'https://i.postimg.cc/m2wFdX4K/1000093964-removebg-preview.png'
+    },{
+      name:'services',
+      image:'https://i.postimg.cc/G2wPJtw3/1000094062-removebg-preview.png'
+    },
+    {
+      name:'express delivery',
+      image:'https://i.postimg.cc/j2tJj3Bq/1000094092-removebg-preview.png'
+    }, {
+      name:'shopping',
+      image:'https://i.postimg.cc/V61VYmsr/1000094094-removebg-preview.png'
+    }
+  ]
   shopList= [
     {
       name:"KWA ACE eKITCHEN",

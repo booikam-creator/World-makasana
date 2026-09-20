@@ -2,43 +2,25 @@
     <app-navbar></app-navbar>
     <div class="container h-100 py-3">
         <div class="grid-container">
-            <div class="bg-light card-main rounded-2 container py-3">
-                <h6 class="text">Eats</h6>
-                <div class="main">
-                    <img src="https://i.postimg.cc/rpTzG50n/1000093962-removebg-preview.png" alt class="main-img">
-                </div>
-            </div>
-            <div class="bg-light card-main rounded-2 container py-3 xon">
-                <h6 class="text">Grocery</h6>
-                <div class="main pt-2">
-                    <img src="https://i.postimg.cc/m2wFdX4K/1000093964-removebg-preview.png" alt="" class="main-img">
-                </div>
-            </div>
-            <div class="bg-light card-main rounded-2 container py-3 xon">
-                <h6 class="text">Services</h6>
-                <div class="main">
-                    <img src="https://i.postimg.cc/G2wPJtw3/1000094062-removebg-preview.png" alt="" class="main-img">
-                </div>
 
+            <div *ngFor="let category of categoryList| slice:0:3;let i =index "
+                class="bg-light card-main rounded-2 container py-3" routerLink="/mc/{{category.name|replace: ' ':'-'}}">
+                <h6 class="text">{{category.name| titlecase }}</h6>
+                <div class="main" [ngClass]="{'pt-2': i === 1}">
+                    <img [src]="category.image" alt class="main-img">
+                </div>
             </div>
 
         </div>
         <div class="grid-container-2 my-3">
+            <div class="card-main rounded-2 container bg-light py-3 xon" routerLink="/mc/{{category.name|replace:' ': '-'}}" [ngClass]="{'bg-navy text-white': i !== 0}"
+                *ngFor="let category of categoryList|slice:3:5; let i = index;">
+                <h6 class="text">{{category.name| titlecase}}</h6>
+                <div class="main">
+                    <img [src]="category.image" alt class="main-img truck" [ngClass]="{'fashion': i !== 0}">
+                </div>
+            </div>
 
-            <div class="bg-light card-main rounded-2 container py-3 xon">
-                <h6 class="text">Express Delivery</h6>
-                <div class="main">
-                    <img src="https://i.postimg.cc/j2tJj3Bq/1000094092-removebg-preview.png" alt=""
-                        class="main-img truck">
-                </div>
-            </div>
-            <div class="bg-navy card-main text-white rounded-2 container py-3 xon">
-                <h6 class="text">Market</h6>
-                <div class="main">
-                    <img src="https://i.postimg.cc/V61VYmsr/1000094094-removebg-preview.png" alt=""
-                        class="main-img fashion">
-                </div>
-            </div>
         </div>
         <div class="ca py-3">
             <div class="d-flex mb-2 align-items-center justify-content-between">
@@ -98,24 +80,24 @@
                     <i class="bi  bi-arrow-right"></i>
                 </div>
             </div>
-            
-                <div class="d-flex over pb-3 pt-1 grid-product" >
-                    <div class="col-6  rounded-2  shadow-sm" *ngFor="let product of productList">
-                        <div class="con">
-                            <img [src]="product.image" class="w-100 rounded-top-2">
-                        </div>
-                        <div class="container py-2">
-                            <h6 class="text mb-2 text-truncate-2 card-title">{{product.name}}</h6>
-                            <div class="d-flex align-items-center justify-content-between align-items-center">
-                                <h6 class="text mb-0" ><span class="span">R</span> {{product.price| currency:' '}}</h6>
-                                <div class="icon text-white d-flex justify-content-center align-items-center bg-navy">
-                                    <i class="bi bi-plus"></i>
-                                </div>
+
+            <div class="d-flex over pb-3 pt-1 grid-product">
+                <div class="col-6  rounded-2  shadow-sm" *ngFor="let product of productList">
+                    <div class="con">
+                        <img [src]="product.image" class="w-100 rounded-top-2">
+                    </div>
+                    <div class="container py-2">
+                        <h6 class="text mb-2 text-truncate-2 card-title">{{product.name}}</h6>
+                        <div class="d-flex align-items-center justify-content-between align-items-center">
+                            <h6 class="text mb-0"><span class="span">R</span> {{product.price| currency:' '}}</h6>
+                            <div class="icon text-white d-flex justify-content-center align-items-center bg-navy">
+                                <i class="bi bi-plus"></i>
                             </div>
                         </div>
                     </div>
                 </div>
-            
+            </div>
+
         </div>
     </div>
 

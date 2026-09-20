@@ -5,6 +5,7 @@ import { SignupComponent } from './pages/signup/signup.component';
 import { AcountComponent } from './pages/acount/acount.component';
 import { signinGuard } from './guards/signin.guard';
 import { StoreComponent } from './pages/store/store.component';
+import { MainComponent } from './pages/main/main.component';
 
 
 const routes: Routes = [
@@ -12,10 +13,11 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'signup', component: SignupComponent },
   {path:'store/:name', component:StoreComponent},
-  {path:'account', component:AcountComponent},
+  {path:'mc/:name', component:MainComponent},
+
   {
     path: 'account',
-    canActivate: [signinGuard],
+  //  canActivate: [signinGuard],
     component: AcountComponent
   }
 

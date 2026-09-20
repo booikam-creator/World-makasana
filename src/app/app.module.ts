@@ -23,6 +23,8 @@ import { SignupComponent } from './pages/signup/signup.component';
 import { AcountComponent } from './pages/acount/acount.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { StoreComponent } from './pages/store/store.component';
+import { MainComponent } from './pages/main/main.component';
+import { ReplacePipe } from './pipes/replace.pipe';
 
 
 @NgModule({
@@ -34,6 +36,8 @@ import { StoreComponent } from './pages/store/store.component';
     AcountComponent,
     NavbarComponent,
     StoreComponent,
+    MainComponent,
+    ReplacePipe,
     
     
   ],

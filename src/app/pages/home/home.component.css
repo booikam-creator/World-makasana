@@ -85,7 +85,7 @@
 
 .bg-navy,
 button {
-    background: #191970;
+    background: #191970 !important;
     border-radius: 20px;
 }
 
