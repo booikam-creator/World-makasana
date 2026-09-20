@@ -27,7 +27,17 @@
     /* Big column on left, small on right */
     gap: 5px;
 }
-
+.grid-equal{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+     gap:5px; 
+}
+.card-title{
+    font-size:12px;
+}
+.span{
+    font-size: 10px;
+}
 .card-main {
     height: 100px;
     overflow: hidden;
