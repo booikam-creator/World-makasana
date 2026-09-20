@@ -20,7 +20,9 @@
     top: -25px;
 
 }
-
+.grid-product{
+    gap:5px;
+}
 .grid-container-2 {
     display: grid;
     grid-template-columns: 2fr 1fr;

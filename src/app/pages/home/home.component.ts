@@ -46,7 +46,7 @@ export class HomeComponent {
       price:29.99
     },{
       name:'Huletts White Sugar 2.5kg',
-      image:'',
+      image:'https://i.postimg.cc/Fz5wy4mw/silo-product-image-v2-19Feb2024-100100-6001042000304-Straight-on-205099-2366-400Wx400H.jpg',
       price:59.99
     }
   ]
