@@ -75,23 +75,13 @@
                 </div>
             </div>
             <div class="grid-equal">
-                <div class="col rounded-2  shadow">
-                    <div class="con">
-                        <img src="https://i.postimg.cc/Rhvfkmyw/1780391344430-e62ebf.jpg" alt=""
-                            class="w-100 rounded-top-2">
-                    </div>
-                    <div class="container py-2">
-                        <h6 class="text card-title">Relaxation Massage</h6>
 
-                    </div>
-                </div>
-                <div class="col rounded-2 shadow">
-                    <img src="https://i.postimg.cc/K4SXG97x/77c846f1a3849b039118493081da18f4.jpg"
-                        class="w-100 rounded-top-2">
+                <div class="col rounded-2 shadow-sm" *ngFor="let item of serviceList ">
+                    <img [src]="item.image" class="w-100 rounded-top-2">
                     <div class="container py-2">
-                        <h6 class="text card-title mb-2">Relaxation Massage</h6>
-                        <div class="d-flex justify-content-between align-items-center" >
-                            <h6 class="text mb-0"><span class="span">R</span> 300.00</h6>
+                        <h6 class="text card-title mb-2">{{item.name}}</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h6 class="text mb-0"><span class="span">R</span> {{item.price|currency:' '}}</h6>
                             <div class="icon text-white d-flex justify-content-center align-items-center bg-navy">
                                 <i class="bi bi-plus"></i>
                             </div>
@@ -99,6 +89,33 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+        <div class="col py-3">
+            <div class="d-flex mb-2 align-items-center justify-content-between">
+                <h5 class="text mb-0">SPAZA ESSENTIAL</h5>
+                <div class="icon d-flex justify-content-center rounded-circle align-items-center  bg-light">
+                    <i class="bi  bi-arrow-right"></i>
+                </div>
+            </div>
+            <div class="d-flex">
+
+                <div class="grid-equal">
+                    <div class="col rounded-2  shadow" *ngFor="let product of productList">
+                        <div class="con">
+                            <img [src]="product.image" class="w-100 rounded-top-2">
+                        </div>
+                        <div class="container py-2">
+                            <h6 class="text mb-2 text-truncate-2 card-title">{{product.name}}</h6>
+                            <div class="d-flex align-items-center justify-content-between align-items-center">
+                                <h6 class="text mb-0" ><span class="span">R</span> {{product.price| currency:' '}}</h6>
+                                <div class="icon text-white d-flex justify-content-center align-items-center bg-navy">
+                                    <i class="bi bi-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

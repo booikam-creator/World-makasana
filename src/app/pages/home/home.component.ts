@@ -21,4 +21,33 @@ export class HomeComponent {
       cover:'https://i.postimg.cc/s2Lv4DHb/1789571627911.jpg'
     }
   ]
+
+  serviceList= [
+    {
+      name:"Relaxation Massage",
+      image:"https://i.postimg.cc/Rhvfkmyw/1780391344430-e62ebf.jpg",
+      price:300
+    },
+    {
+      name:"Split AC cleaning",
+      image:'https://i.postimg.cc/K4SXG97x/77c846f1a3849b039118493081da18f4.jpg',
+      price:1200
+    }
+  ]
+
+  productList = [
+    {
+      name:'Blue Ribbon Classic White Sliced Bread 700g',
+      image:'https://i.postimg.cc/nrsHMTdB/silo-product-image-v2-25Feb2026-180257-6009629181064-Straight-on-408344-600-400Wx400H.jpg',
+      price:17
+    },{
+      name:'Clover Full Cream Milk Fresh 2L',
+      image:'https://i.postimg.cc/KjdJyvk5/silo-product-image-v2-25Feb2026-180308-6001299000270-Straight-on-407950-618-400Wx400H.jpg',
+      price:29.99
+    },{
+      name:'Huletts White Sugar 2.5kg',
+      image:'',
+      price:59.99
+    }
+  ]
 }
