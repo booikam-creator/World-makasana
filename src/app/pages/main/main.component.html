@@ -1,11 +1,33 @@
-
 <app-navbar></app-navbar>
 
-<div class="d-flex over text-nowrap container py-2">
-    <div class="bg-light d-flex align-items-center p-1 rounded-5" [ngClass]="{'me-2':!isLast}" *ngFor="let category of categoryList; let isLast = last">
-        <div class="bg-white rounded-circle p-1 d-flex align-items-center cate-container" >
-            <img [src]="category.image" alt="" class="w-100">
+<div class="d-flex over text-nowrap container py-3">
+    <div class="bg-light d-flex align-items-center p-1 rounded-5" [ngClass]="{'me-2':!isLast}"
+        *ngFor="let category of categoryList; let isLast = last">
+        <div class="bg-white rounded-circle p-1 d-flex align-items-center cate-container">
+            <img [src]="category.image" alt="" class="w-100 rounded-circle">
         </div>
         <h6 class="mx-2 bold mb-0 text">{{category.name}}</h6>
+    </div>
+</div>
+<div class="container py-2">
+    <div class="d-flex mb-2 align-items-center justify-content-between">
+        <h5 class="text mb-0 ">STORES NEARBY </h5>
+
+    </div>
+
+    <div class="d-flex over">
+        <div class="col-8" *ngFor="let shop of shopList; let isLast = last">
+            <div class="bg-dark p-1 d-flex shadow w-100 rounded-3">
+                <div class="col ">
+                    <div class="bg-white bg-logo p-2 rounded-3 shop" [ngStyle]="{'background-image': 'url(' + shop.logo + ')'}">
+
+                    </div>
+                </div>
+                <div class="col">
+
+                </div>
+
+            </div>
+        </div>
     </div>
 </div>

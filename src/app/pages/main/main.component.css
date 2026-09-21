@@ -3,16 +3,50 @@
     width: 30px;
 }
 
+.over::-webkit-scrollbar {
+    width: 0px;
+    /* Width of the vertical scrollbar */
+    height: 0px;
+    /* Height of the horizontal scrollbar */
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
 .text {
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
 }
-.bg-navy{
+
+.bg-navy {
     background: #191970;
 }
-h6{
+
+h6 {
     font-size: 14px;
 }
-.over{
+
+.over {
     overflow-x: auto;
+}
+
+.shop {
+    width: 65px;
+    height: 65px;
+}
+
+.bg-logo {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    /* Spacing between columns/rows */
 }
