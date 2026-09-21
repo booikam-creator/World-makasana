@@ -2,6 +2,7 @@ import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { Route, Router } from '@angular/router';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,18 +10,43 @@ import { Route, Router } from '@angular/router';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-  curUrl:any
+  curUrl: any
+  userLocation: string = ''
   isScrolled = false;
   userOverride = false; // Prevents scroll event from overriding click action
-constructor(private router: Router) {}
-ngOnInit(){
- this.curUrl = this.router.url.split('/')[1]
-}
-  // Click handler: Toggles visibility AND marks that user made a manual choice
+  constructor(
+    private router: Router,
+    private authService: AuthService
+  ) { }
+  ngOnInit() {
+    this.curUrl = this.router.url.split('/')[1]
+    this.getCurrentLocation()
+  }
+
+
+  getCurrentLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        const lat = position.coords.latitude;
+        const lng = position.coords.longitude;
+
+        this.authService.getCityName(lat, lng).subscribe((data: any) => {
+          this.userLocation= `${data.address.house_number} ${data.address.road}, ${data.address.city} `
+          
+        });
+
+      }, (error) => {
+        console.error('Error getting location', error);
+      });
+    } else {
+      console.error('Geolocation is not supported by this browser.');
+    }
+  }
   isShow(): void {
     this.isScrolled = !this.isScrolled;
     this.userOverride = true; // Stop scroll listener from overriding this click
   }
+
   @HostListener('window:scroll', [])
   onWindowScroll(): void {
     const scrollPosition = window.scrollY || document.documentElement.scrollTop || 0;

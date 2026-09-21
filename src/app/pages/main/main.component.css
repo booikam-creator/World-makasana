@@ -1,0 +1,15 @@
+.cate-container {
+    height: 30px;
+    width: 30px;
+}
+
+.text {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+}
+.bg-navy{
+    background: #191970;
+}
+h6{
+    font-size: 14px;
+}

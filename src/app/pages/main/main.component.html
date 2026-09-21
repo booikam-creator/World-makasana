@@ -1,1 +1,11 @@
+
 <app-navbar></app-navbar>
+
+<div class="d-flex container py-2">
+    <div class="bg-light d-flex align-items-center p-1 rounded-5" [ngClass]="{'me-2':!isLast}" *ngFor="let category of categoryList; let isLast = last">
+        <div class="bg-white rounded-circle p-1 d-flex align-items-center cate-container" >
+            <img [src]="category.image" alt="" class="w-100">
+        </div>
+        <h6 class="mx-2 bold mb-0 text">{{category.name}}</h6>
+    </div>
+</div>
