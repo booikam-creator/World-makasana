@@ -15,9 +15,18 @@ export class MainComponent {
 
     },
     {
-      image:'https://i.postimg.cc/ydJ9TtsN/1000094467-removebg-preview.png',
-      name:'Halal'
+      image:'https://i.postimg.cc/KzC4fY8t/1000094497-removebg-preview.png',
+      name:'Bakery'
+    },{
+      name:'Fresh Fruit & Veg',
+      image:'https://i.postimg.cc/xTMgKJ1z/1000094498-removebg-preview.png'
+    },{
+      name:'Snacks',
+      image:'https://i.postimg.cc/N09KHTQW/1000094499-removebg-preview.png'
+    },
+    {
+      name:'Alcohol',
+      image:'https://ibb.co/JRYxK8vw'
     }
-
   ]
 }
