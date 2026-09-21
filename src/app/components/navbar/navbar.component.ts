@@ -9,9 +9,13 @@ import { Route, Router } from '@angular/router';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  curUrl:any
   isScrolled = false;
   userOverride = false; // Prevents scroll event from overriding click action
-
+constructor(private router: Router) {}
+ngOnInit(){
+ this.curUrl = this.router.url.split('/')[1]
+}
   // Click handler: Toggles visibility AND marks that user made a manual choice
   isShow(): void {
     this.isScrolled = !this.isScrolled;
