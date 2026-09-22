@@ -9,7 +9,11 @@
     height: 0px;
     /* Height of the horizontal scrollbar */
 }
+.all-shop{
+    width:90px;
+    height:90px;
 
+}
 .icon {
     width: 30px;
     height: 30px;

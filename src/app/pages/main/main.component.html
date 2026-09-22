@@ -65,7 +65,8 @@
                     <h6 class="text mb-2 text-truncate-2 card-title">{{product.name}}</h6>
                     <div class="d-flex align-items-center justify-content-between align-items-center">
                         <h6 class="text mb-0"><span class="span">R</span> {{product.price| currency:' '}}</h6>
-                        <div class="icon text-white rounded-circle d-flex justify-content-center align-items-center bg-navy">
+                        <div
+                            class="icon text-white rounded-circle d-flex justify-content-center align-items-center bg-navy">
                             <i class="bi bi-plus"></i>
                         </div>
                     </div>
@@ -73,5 +74,47 @@
             </div>
         </div>
 
+    </div>
+</div>
+
+<div class=" container py-2">
+    <div class="d-flex  align-items-center justify-content-between">
+        <h5 class="text mb-0">ALL STORE</h5>
+        <div class="icon d-flex justify-content-center rounded-circle align-items-center  bg-light">
+            <i class="bi  bi-arrow-right"></i>
+        </div>
+    </div>
+    <div class="col-12 " *ngFor="let shop of shopList; let isLast = last">
+        <div class="d-flex py-2 border-bottom w-100 ">
+            <div class="co d-flex">
+                <div *ngIf="shop.logo" class="bg-white bg-logo p-2 rounded-3 all-shop"
+                    [ngStyle]="{'background-image': 'url(' + shop.logo + ')'}">
+
+                </div>
+                <div class="all-shop text-white hidden" *ngIf="!shop.logo">
+                    <img src="https://i.postimg.cc/RFXTr6gJ/f7a29607e941d4b390778d7e1a7d340e.jpg" alt=""
+                        class="w-100 rounded-3">
+                </div>
+            </div>
+            <div class="col mx-2 align-items-end d-flex flex-column  py-1">
+                <div class="w-100 pb-2 d-flex mb-auto justify-content-between align-items-center">
+                    <h6 class="text mb-0">{{shop.name}}</h6>
+                    <div *ngIf="shop.rating" class="d-flex bg-dark px-1 text-white rounded-3 align-items-center">
+                        <i class="bi span me-1 text-truncate text-warning bi-star-fill"></i>
+                        <span class="span">{{shop.rating}}</span>
+                    </div>
+                </div>
+                <div class="con">
+                    <p class="text-wrap text span small mb-4">
+                        Spaza • Daily Essentials • Cold Drinks & Snacks
+                    </p>
+                </div>
+                <div class="mt-auto h-100 d-flex justify-content-between w-100">
+                    <h6 class="span text mb-0">2KM away</h6>
+                    <h6 class="span text mb-0"> {{shop.min}} mins</h6>
+
+                </div>
+            </div>
+        </div>
     </div>
 </div>
