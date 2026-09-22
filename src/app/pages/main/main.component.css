@@ -27,9 +27,11 @@
 h6 {
     font-size: 14px;
 }
-.span{
-    font-size:10px; 
+
+.span {
+    font-size: 10px;
 }
+
 .over {
     overflow-x: auto;
 }
@@ -51,4 +53,15 @@ h6 {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5px;
     /* Spacing between columns/rows */
+}
+
+.card-title {
+    font-size: 12px;
+}
+
+.text-truncate-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }

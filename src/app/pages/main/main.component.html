@@ -46,3 +46,32 @@
         </div>
     </div>
 </div>
+
+<div class="container">
+    <div class="col pt-3">
+        <div class="d-flex mb-2 align-items-center justify-content-between">
+            <h5 class="text mb-0">SPAZA ESSENTIAL</h5>
+            <div class="icon d-flex justify-content-center rounded-circle align-items-center  bg-light">
+                <i class="bi  bi-arrow-right"></i>
+            </div>
+        </div>
+
+        <div class="d-flex over pb-3 pt-1 grid-product">
+            <div class="col-6  rounded-2  shadow-sm" *ngFor="let product of productList">
+                <div class="con">
+                    <img [src]="product.image" class="w-100 rounded-top-2">
+                </div>
+                <div class="container py-2">
+                    <h6 class="text mb-2 text-truncate-2 card-title">{{product.name}}</h6>
+                    <div class="d-flex align-items-center justify-content-between align-items-center">
+                        <h6 class="text mb-0"><span class="span">R</span> {{product.price| currency:' '}}</h6>
+                        <div class="icon text-white rounded-circle d-flex justify-content-center align-items-center bg-navy">
+                            <i class="bi bi-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

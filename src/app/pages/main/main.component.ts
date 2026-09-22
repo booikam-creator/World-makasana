@@ -33,15 +33,31 @@ export class MainComponent {
   shopList = [
     {
       name: "Mbele Spaza Shop",
-      min:20,
-      rating:2.3
+      min: 20,
+      rating: 2.3
     },
     {
       name: 'Spaza store',
-      min:10,
+      min: 10,
       logo: 'https://i.postimg.cc/XYGd2DMK/images.png'
     }
   ]
-                                                                    
+  productList = [
+    {
+      name: 'Blue Ribbon Classic White Sliced Bread 700g',
+      image: 'https://i.postimg.cc/nrsHMTdB/silo-product-image-v2-25Feb2026-180257-6009629181064-Straight-on-408344-600-400Wx400H.jpg',
+      price: 17
+    }, {
+      name: 'Clover Full Cream Milk Fresh 2L',
+      image: 'https://i.postimg.cc/KjdJyvk5/silo-product-image-v2-25Feb2026-180308-6001299000270-Straight-on-407950-618-400Wx400H.jpg',
+      price: 29.99
+    }, {
+      name: 'Huletts White Sugar 2.5kg',
+      image: 'https://i.postimg.cc/Fz5wy4mw/silo-product-image-v2-19Feb2024-100100-6001042000304-Straight-on-205099-2366-400Wx400H.jpg',
+      price: 59.99
+    }
+  ]
   
+
+
 }
