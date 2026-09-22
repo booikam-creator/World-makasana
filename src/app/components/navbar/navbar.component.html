@@ -1,10 +1,10 @@
 <div class="fixed-top shadow bg-white  container">
     <div class="d-flex py-3 align-items-center justify-content-between">
-        <div class="logo bg-white" *ngIf="curUrl !== 'mc'">
+        <div class="logo bg-white" *ngIf="curUrl === 'home'">
 
         </div>
-        <div class="col">
-            <span class="text text-secondary span">Deliver To</span>
+        <div class="col" *ngIf="curUrl !== 'home'">
+            <span class="text text-secondary card-title">Delivery To</span>
             <h6 class="text col-6 mb-0 text-start text-truncate card-title" *ngIf="curUrl !== 'home' ">{{userLocation}}</h6>
         </div>
         <div class="d-flex  align-items-center just">
