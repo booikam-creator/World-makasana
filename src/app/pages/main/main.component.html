@@ -9,25 +9,40 @@
         <h6 class="mx-2 bold mb-0 text">{{category.name}}</h6>
     </div>
 </div>
-<div class="container py-2">
-    <div class="d-flex mb-2 align-items-center justify-content-between">
+<div class="container pt-2">
+    <div class="d-flex align-items-center justify-content-between">
         <h5 class="text mb-0 ">STORES NEARBY </h5>
 
     </div>
+</div>
 
-    <div class="d-flex over">
-        <div class="col-8" *ngFor="let shop of shopList; let isLast = last">
-            <div class="bg-dark p-1 d-flex shadow w-100 rounded-3">
-                <div class="col ">
-                    <div class="bg-white bg-logo p-2 rounded-3 shop" [ngStyle]="{'background-image': 'url(' + shop.logo + ')'}">
+<div class="d-flex container over py-2">
+    <div class="col-8 me-2" *ngFor="let shop of shopList; let isLast = last">
+        <div class=" p-1 d-flex shadow-sm w-100 rounded-3">
+            <div class="co d-flex">
+                <div *ngIf="shop.logo" class="bg-white bg-logo p-2 rounded-3 shop"
+                    [ngStyle]="{'background-image': 'url(' + shop.logo + ')'}">
 
-                    </div>
                 </div>
-                <div class="col">
-
+                <div class="shop text-white hidden" *ngIf="!shop.logo">
+                    <img src="https://i.postimg.cc/RFXTr6gJ/f7a29607e941d4b390778d7e1a7d340e.jpg" alt=""
+                        class="w-100 rounded-3">
+                </div>
+            </div>
+            <div class="col mx-2 d-flex flex-column  py-2">
+                <div class="con  mb-auto">
+                    <h6 class="text">{{shop.name}}</h6>
+                </div>
+                <div class="d-flex w-100 mt-auto d-flex justify-content-between">
+                    <p class="mb-0 span text-">{{shop.min}} mins</p>
+                    <div *ngIf="shop.rating" class="d-flex align-items-center">
+                        <i class="bi span me-1 text-truncate text-warning bi-star-fill"></i>
+                        <span class="span">{{shop.rating}}</span>
+                    </div>
                 </div>
 
             </div>
+
         </div>
     </div>
 </div>

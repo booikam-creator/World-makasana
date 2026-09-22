@@ -32,16 +32,14 @@ export class MainComponent {
 
   shopList = [
     {
-      name: "KWA ACE eKITCHEN",
-      logo: 'https://i.postimg.cc/qBmBLr6Q/1789483061963.jpg',
-      cover: 'https://i.postimg.cc/rwBZqzY2/1789483155738.jpg'
+      name: "Mbele Spaza Shop",
+      min:20,
+      rating:2.3
     },
     {
-      name: 'Goldern Dash',
-      cover: 'https://i.postimg.cc/KjSBxcVj/cm6i5aq1k000003lebrgq2ki9.jpg'
-    }, {
-      name: 'Rands Cape Town',
-      cover: 'https://i.postimg.cc/s2Lv4DHb/1789571627911.jpg'
+      name: 'Spaza store',
+      min:10,
+      logo: 'https://i.postimg.cc/XYGd2DMK/images.png'
     }
   ]
                                                                     
