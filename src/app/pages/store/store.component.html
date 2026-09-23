@@ -1,12 +1,12 @@
-<div class="bg-dark  bg  fixed-top z-n1">
-    <div class="bg-b h-100 w-100">
+<div class="bg-light  bg  fixed-top z-n1">
+    <div class="bg- h-100 w-100">
 
     </div>
 
 </div>
-<div class="container z-1">
+<div class="container  z-1">
     <div class="d-flex  py-3 justify-content-between">
-        <div class="icon d-flex align-items-center justify-content-center bg-white rounded-circle shadow">
+        <div class="icon d-flex align-items-center justify-content-center bg-white rounded-circle shadow-sm">
             <i class="bi bi-arrow-left"></i>
         </div>
         <div class="d-flex">
@@ -18,36 +18,52 @@
             </div>
         </div>
     </div>
-    <div *ngIf="obj.logo" class="pt-3">
-        <img src="{{obj.logo}}" alt="" class="logo border border-3 border-white rounded-circle">
-    </div>
-    <h5 [ngClass]="{'mt-5':!obj.logo}" class="text pt-2">{{obj.name}}</h5>
-    <div class="d-flex justify-content-between">
-        <div class="d-flex align-items-center">
-            <i class="bi span  bi-geo-alt"></i>
-            <p class="span mb-0 mx-2">160 Phakamani Rd, Village 1 North</p>
+    <div class=" d-flex rounded-3 py-1 align-items-center mt-3 bg-white shadow-sm">
+        <div *ngIf="obj.logo">
+            <img src="{{obj.logo}}" alt="" class="logo  rounded-3 border border-3 border-white">
         </div>
-        <div  class="d-flex bg-dark rounded-4 text-white px-1 align-items-center">
-            <i class="bi span me-1 text-truncate text-warning bi-star-fill"></i>
-            <span class="span">2.5</span>
-        </div>
-    </div>
-    <div class="d-flex align-items-center mt-2 span">
-        <div class="d-flex align-items-center me-2">
-            <h6 class="text mb-0 span">40 - 60 mins </h6>
-        </div>
-        <i class="bi  bi-dot"></i>
-        <div class="d-flex align-items-center mx-2">
-            <h6 class="span text mb-0">1.2KM away</h6>
-        </div>
-        <i class="bi bi-dot"></i>
-        <div class="d-flex align-items-center ms-2">
-            <h6 class="span text mb-0">R 30.00 fee</h6>
-        </div>
-    </div>
-</div>
-<div class="border-bottom mt-4 w-100 container d-flex">
-    <h6 class="text border-bottom mb-0 pb-2 border-2 me-3 border-black ">ALL</h6>
-    <h6 class="text mb-0 pb-2  me-2 ">SNACKS</h6>
+        <div class="col container ">
+            <div class="d-flex mb-2 align-items-center justify-content-between">
+                <h6 class="text mb-0">{{obj.name}}</h6>
+                <div class="d-flex bg-dark rounded-4 text-white px-1 align-items-center">
+                    <i class="bi span me-1 text-truncate text-warning bi-star-fill"></i>
+                    <span class="span">2.5</span>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                    <i class="bi span  bi-geo-alt"></i>
+                    <p class="span mb-0 mx-1">160 Phakamani Rd, Village 1 North</p>
+                </div>
 
+            </div>
+            <div class="d-flex align-items-center mt-2 span">
+                <div class="d-flex align-items-center me-1">
+                    <h6 class="text mb-0 span">40 - 60 mins </h6>
+                </div>
+                <i class="bi  bi-dot"></i>
+                <div class="d-flex align-items-center mx-1">
+                    <h6 class="span text mb-0">1.2KM away</h6>
+                </div>
+                <i class="bi bi-dot"></i>
+                <div class="d-flex align-items-center ms-1">
+                    <h6 class="span text mb-0">R 300.00 fee</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="container pt-3">
+    <div class="d-flex">
+        <div class="border d-flex align-items-center justify-content-center icon text-white bg-dark rounded-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 15h18M3 9h18" />
+            </svg>
+
+        </div>
+    </div>
 </div>
