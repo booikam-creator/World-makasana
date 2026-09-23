@@ -7,11 +7,13 @@ import { Component } from '@angular/core';
 })
 export class StoreComponent {
 
+
   obj = {
-    name: "KWA ACE eKITCHEN",
-    description:'Umleqwa, Burgers and Wraps',
-    logo: 'https://i.postimg.cc/qBmBLr6Q/1789483061963.jpg',
-    cover: 'https://i.postimg.cc/rwBZqzY2/1789483155738.jpg'
+    name: 'Spaza store',
+    min: 10,
+    //logo:''
+    logo: 'https://i.postimg.cc/XYGd2DMK/images.png'
   }
 }
+
 

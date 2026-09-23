@@ -27,6 +27,7 @@ import { MainComponent } from './pages/main/main.component';
 import { ReplacePipe } from './pipes/replace.pipe';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,9 +55,9 @@ import { ReplacePipe } from './pipes/replace.pipe';
     MatSelectModule,
     MatProgressSpinnerModule,
     MatCardModule,
+    AppRoutingModule,
     
-    AppRoutingModule
-  ],
+],
   providers: [
     provideAnimationsAsync()
   ],

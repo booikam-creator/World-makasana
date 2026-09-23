@@ -1,11 +1,11 @@
-<div class="bg-dark  bg  fixed-top z-n1" [ngStyle]="{ 'background-image': 'url(' + obj.cover + ')' }">
+<div class="bg-dark  bg  fixed-top z-n1">
     <div class="bg-b h-100 w-100">
 
     </div>
 
 </div>
 <div class="container z-1">
-    <div class="d-flex  py-2 justify-content-between">
+    <div class="d-flex  py-3 justify-content-between">
         <div class="icon d-flex align-items-center justify-content-center bg-white rounded-circle shadow">
             <i class="bi bi-arrow-left"></i>
         </div>
@@ -18,39 +18,31 @@
             </div>
         </div>
     </div>
-    <div class="shadow bg-white my-3  border-none rounded-3 w-100">
-        <div class="container p-2">
-
-            <div class="row">
-                <div class="col-4">
-
-                    <img [src]="obj.logo" alt class="w-100 rounded-3">
-
-                </div>
-                <div class="col">
-                    <h6 class="text mb-1">{{obj.name}}</h6>
-                    <p class="text-secondary span">{{obj.description}}</p>
-                    <div class="d-flex justify-content-between align-items-center">
-
-                        <div class="d-flex align-items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                                <path d="M0 0h24v24H0z" fill="none" />
-                                <path fill="currentColor"
-                                    d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10s10-4.486 10-10S17.514 2 12 2m0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8s8 3.589 8 8s-3.589 8-8 8" />
-                                <path fill="currentColor" d="M13 7h-2v5.414l3.293 3.293l1.414-1.414L13 11.586z" />
-                            </svg>
-                            <p class="span mb-0 ms-1">23 - 50 mins</p>
-
-                        </div>
-                        <div class="bg-dark d-flex align-items-center text-white py-1 px-2  span rounded-5">
-                            <i class="bi text-warning me-1 bi-star-fill"></i>
-                            <p class="main-span mb-0 text-secondary">4.3</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+    <div *ngIf="obj.logo" class="pt-3">
+        <img src="{{obj.logo}}" alt="" class="logo border border-3 border-white rounded-circle">
+    </div>
+    <h5 [ngClass]="{'mt-5':!obj.logo}" class="text pt-2">{{obj.name}}</h5>
+    <div class="d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+            <i class="bi span  bi-geo-alt"></i>
+            <p class="span mb-0 mx-2">160 Phakamani Rd, Village 1 North</p>
         </div>
-
+        <div  class="d-flex bg-dark rounded-4 text-white px-1 align-items-center">
+            <i class="bi span me-1 text-truncate text-warning bi-star-fill"></i>
+            <span class="span">2.5</span>
+        </div>
+    </div>
+    <div class="d-flex align-items-center mt-2 span">
+        <div class="d-flex align-items-center me-2">
+            <h6 class="text mb-0 span">40 - 60 mins </h6>
+        </div>
+        <i class="bi  bi-dot"></i>
+        <div class="d-flex align-items-center mx-2">
+            <h6 class="span text mb-0">1.2KM away</h6>
+        </div>
+        <i class="bi bi-dot"></i>
+        <div class="d-flex align-items-center ms-2">
+            <h6 class="span text mb-0">R 30.00 fee</h6>
+        </div>
     </div>
 </div>
