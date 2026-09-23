@@ -11,8 +11,8 @@ export class StoreComponent {
   obj = {
     name: 'Spaza store',
     min: 10,
-    //logo:''
-    logo: 'https://i.postimg.cc/XYGd2DMK/images.png'
+    logo:''
+    //logo: 'https://i.postimg.cc/XYGd2DMK/images.png'
   }
 }
 
