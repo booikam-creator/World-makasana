@@ -1,69 +1,52 @@
-<div class="bg-light  bg  fixed-top z-n1">
-    <div class="bg- h-100 w-100">
+<div class="container-sm p-0 max-width-mobile">
 
-    </div>
+    <!-- Top Header Banner -->
+    <div class="hero-banner p-0 mobil">
+        <div class="d-flex justify-content-between align-items-center top-controls">
+            <button class="icon-btn"><i class="bi bi-arrow-left"></i></button>
+            <button class="icon-btn"><i class="bi bi-three-dots"></i></button>
+        </div>
 
-</div>
-<div class="container  z-1">
-    <div class="d-flex  py-3 justify-content-between">
-        <div class="icon d-flex align-items-center justify-content-center bg-white rounded-circle shadow-sm">
-            <i class="bi bi-arrow-left"></i>
-        </div>
-        <div class="d-flex">
-            <div class="icon d-flex align-items-center justify-content-center bg-white rounded-circle me-3 shadow">
-                <i class="bi bi-heart"></i>
-            </div>
-            <div class="icon d-flex align-items-center justify-content-center bg-white rounded-circle shadow">
-                <i class="bi bi-search"></i>
-            </div>
-        </div>
-    </div>
-    <div class=" d-flex rounded-3 py-1 align-items-center mt-3 bg-white shadow-sm">
-        <div *ngIf="obj.logo">
-            <img src="{{obj.logo}}" alt="" class="logo  rounded-3 border border-3 border-white">
-        </div>
-        <div class="col container ">
-            <div class="d-flex mb-2 align-items-center justify-content-between">
-                <h6 class="text mb-0">{{obj.name}}</h6>
-                <div class="d-flex bg-dark rounded-4 text-white px-1 align-items-center">
-                    <i class="bi span me-1 text-truncate text-warning bi-star-fill"></i>
-                    <span class="span">2.5</span>
-                </div>
-            </div>
-            <div class="d-flex justify-content-between">
-                <div class="d-flex align-items-center">
-                    <i class="bi span  bi-geo-alt"></i>
-                    <p class="span mb-0 mx-1">160 Phakamani Rd, Village 1 North</p>
-                </div>
-
-            </div>
-            <div class="d-flex align-items-center mt-2 span">
-                <div class="d-flex align-items-center me-1">
-                    <h6 class="text mb-0 span">40 - 60 mins </h6>
-                </div>
-                <i class="bi  bi-dot"></i>
-                <div class="d-flex align-items-center mx-1">
-                    <h6 class="span text mb-0">1.2KM away</h6>
-                </div>
-                <i class="bi bi-dot"></i>
-                <div class="d-flex align-items-center ms-1">
-                    <h6 class="span text mb-0">R 300.00 fee</h6>
-                </div>
-            </div>
+        <!-- SPAR Logo Overlay -->
+        <div class="logo-container" *ngIf="obj.logo">
+            <img src="{{obj.logo}}" alt="{{obj.name}}">
         </div>
     </div>
 
-</div>
+    <!-- Main Content Section -->
+    <div class="main-content  container-sm pt-3">
 
-<div class="container pt-3">
-    <div class="d-flex">
-        <div class="border d-flex align-items-center justify-content-center icon text-white bg-dark rounded-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                <path d="M0 0h24v24H0z" fill="none" />
-                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M3 15h18M3 9h18" />
-            </svg>
+        <!-- Store Title & Info -->
+        <div class="text-center mb-3">
+            <h2 class="fw-bold text mb-2">{{obj.name}}</h2>
 
         </div>
+        <div class="row text-center">
+            <div class="col-4 d-flex justify-content-center border-end p-2">
+                <div class="con">
+                    <div class="d-flex">
+                        <p class="span mb-0 mx-2">4.5</p>
+                    </div>
+                    <p class="span-1 mb-0 text-secondary">(200+)</p>
+                </div>
+            </div>
+            <div class="col-4 d-flex justify-content-center border-end p-2">
+                <div class="com">
+                    <div class="d-flex">
+                        <p class="fw mb-0" ><span class="span-1 mb-3">R</span> 300.00 </p>
+                    </div>
+                    <p class="span-1 mb-0 text-secondary">delivery</p>
+
+                </div>
+            </div>
+            <div class="col-4  p-2">
+                <div class="con">
+                    <p class="span mb-0" >20 - 40</p>
+                    <p class="span-1 mb-0 text-secondary">mins </p>
+
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
