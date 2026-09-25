@@ -36,6 +36,18 @@ p,
     height: 130px;
 }
 
+.card-title {
+    font-size: 12px;
+}
+
+.text-truncate-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
 .span {
     font-size: 14px !important;
 }
