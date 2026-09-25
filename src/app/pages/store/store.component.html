@@ -33,18 +33,78 @@
             <div class="col-4 d-flex justify-content-center border-end p-2">
                 <div class="com">
                     <div class="d-flex">
-                        <p class="fw mb-0" ><span class="span-1 mb-3">R</span> 300.00 </p>
+                        <p class="fw mb-0"><span class="span-1 mb-3">R</span> 300.00 </p>
                     </div>
                     <p class="span-1 mb-0 text-secondary">delivery</p>
 
                 </div>
             </div>
-            <div class="col-4  p-2">
+            <div class="col-4   p-2">
                 <div class="con">
-                    <p class="span mb-0" >20 - 40</p>
+                    <p class="span mb-0">20 - 40</p>
                     <p class="span-1 mb-0 text-secondary">mins </p>
 
                 </div>
+            </div>
+        </div>
+
+        <div class="d-flex py-4 gap-1">
+            <button type="button" class="icon-btn bg-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="1.5" d="M4 9h16M4 15h10" />
+                </svg>
+
+            </button>
+            <button type="button" class="btn span-1 border rounded-5">
+                SPAZA ESSENTIAL
+            </button>
+        </div>
+
+    </div>
+</div>
+<div class="container">
+    <div class="d-flex mb-2 align-items-center justify-content-between">
+        <h5 class="text mb-0">SPAZA ESSENTIAL</h5>
+        <div class="icon d-flex justify-content-center rounded-circle align-items-center  bg-light">
+            <i class="bi  bi-arrow-right"></i>
+        </div>
+    </div>
+
+    <div class="d-flex over pb-3 pt-1 grid-product">
+        <div class="col-6  rounded-2  shadow-sm" *ngFor="let product of productList">
+            <div class="con">
+                <img [src]="product.image" class="w-100 rounded-top-2">
+            </div>
+            <div class="container py-2">
+                <h6 class="text mb-2 text-truncate-2 card-title">{{product.name}}</h6>
+                <div class="d-flex align-items-center justify-content-between align-items-center">
+                    <h6 class="text mb-0"><span class="span">R</span> {{product.price| currency:' '}}</h6>
+                    <div class="icon text-white d-flex justify-content-center align-items-center bg-navy">
+                        <i class="bi bi-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-sm ">
+    <h6 class="text mb-3">BROWSE CATEGORIES</h6>
+    <div class="grid-equal gap-1">
+        <div class="con " *ngFor="let cate of cateList ">
+            <div class="bg-light cate-a py-2 d-flex flex-column align-items-start w-100 rounded-2 container">
+                <div class="d-flex w-100 justify-content-center al">
+                    <div class="cate d-flex justify-content-center">
+                        <img [src]="cate.image" alt="" class="h-100">
+                    </div>
+                </div>
+
+                <div class="d-flex h-100 mt-auto align-items-center">
+                    <h6 class="text mb-0 text-center span-1">{{cate.name |uppercase}}</h6>
+                </div>
+
             </div>
         </div>
 
