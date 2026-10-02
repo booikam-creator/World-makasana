@@ -6,6 +6,7 @@ import { AcountComponent } from './pages/acount/acount.component';
 import { signinGuard } from './guards/signin.guard';
 import { StoreComponent } from './pages/store/store.component';
 import { MainComponent } from './pages/main/main.component';
+import { LandingComponent } from './admin/landing/landing.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,7 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   {path:'store/:name', component:StoreComponent},
   {path:'mc/:name', component:MainComponent},
-
+  {path:'landing', component:LandingComponent},
   {
     path: 'account',
   //  canActivate: [signinGuard],

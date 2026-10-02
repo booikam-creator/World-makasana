@@ -7,14 +7,14 @@
             <button class="icon-btn"><i class="bi bi-three-dots"></i></button>
         </div>
 
-        <!-- SPAR Logo Overlay -->
-        <div class="logo-container" *ngIf="obj.logo">
-            <img src="{{obj.logo}}" alt="{{obj.name}}">
+        
+        <div class="logo-container rounded-2" *ngIf="obj.logo">
+            <img src="{{obj.logo}}" class="rounded-2"  alt="{{obj.name}}">
         </div>
     </div>
 
     <!-- Main Content Section -->
-    <div class="main-content  container-sm pt-3">
+    <div class="main-content  container-sm pt-3" [ngClass]="{'pt-5': obj.logo}">
 
         <!-- Store Title & Info -->
         <div class="text-center mb-3">
@@ -73,11 +73,11 @@
     </div>
 
     <div class=" pb-3 pt-1 grid-product gap-1">
-        <div class="col-12  rounded-2  shadow-sm" *ngFor="let product of productList">
+        <div class="col-12  rounded-2 pb-3 shadow-sm" *ngFor="let product of productList">
             <div class="con">
                 <img [src]="product.image" class="w-100 rounded-top-2">
             </div>
-            <div class="container py-2">
+            <div class="container py-">
                 <h6 class="text mb-3 text-truncate-2 card-title">{{product.name}}</h6>
                 <div class="d-flex align-items-center justify-content-between align-items-center">
                     <h6 class="text mb-0"><span class="span-1">R</span> {{product.price| currency:' '}}</h6>

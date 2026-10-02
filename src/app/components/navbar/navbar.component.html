@@ -1,9 +1,11 @@
+
+
 <div class="fixed-top shadow bg-white  container">
     <div class="d-flex py-3 align-items-center justify-content-between">
-        <div class="logo bg-white" *ngIf="curUrl === 'home'">
+        <div class="logo bg-white" *ngIf="curUrl === 'home' || curUrl === 'landing'">
 
         </div>
-        <div class="col" *ngIf="curUrl !== 'home'">
+        <div class="col" *ngIf="curUrl !== 'home' && curUrl !== 'landing'">
             <span class="text text-secondary card-title">Delivery To</span>
             <h6 class="text col-6 mb-0 text-start text-truncate card-title" *ngIf="curUrl !== 'home' ">{{userLocation}}</h6>
         </div>
@@ -23,7 +25,7 @@
             </button>
         </div>
     </div>
-    <div class="input-group mb-3 input-group border-none bg-light br p-2" *ngIf="!isScrolled || curUrl == 'mc' ">
+    <div class="input-group mb-3 input-group border-none bg-light br p-2" *ngIf="!isScrolled &&  curUrl !== 'landing' ">
 
         <input type="text" class="form-control bg-light me-1 border-none" placeholder="WHAT ARE YOU LOOKING FOR!!!"
             aria-label="Sizing example input" aria-describedby="inputGroup-sizing">
@@ -57,7 +59,7 @@
         </div>
 
     </div>
-    <div class="input-group mb-3 input-group border-none bg-light br p-2" *ngIf="!isScrolled">
+    <div class="input-group mb-3 input-group border-none bg-light br p-2" *ngIf="!isScrolled && curUrl !== 'landing'">
 
         <input type="text" class="form-control bg-light me-1 border-none" placeholder="WHAT ARE YOU LOOKING FOR!!!"
             aria-label="Sizing example input" aria-describedby="inputGroup-sizing">

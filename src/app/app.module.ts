@@ -25,6 +25,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { StoreComponent } from './pages/store/store.component';
 import { MainComponent } from './pages/main/main.component';
 import { ReplacePipe } from './pipes/replace.pipe';
+import { ReatailComponent } from './components/reatail/reatail.component';
+import { LandingComponent } from './admin/landing/landing.component';
 
 
 
@@ -39,6 +41,8 @@ import { ReplacePipe } from './pipes/replace.pipe';
     StoreComponent,
     MainComponent,
     ReplacePipe,
+    ReatailComponent,
+    LandingComponent,
     
     
   ],
