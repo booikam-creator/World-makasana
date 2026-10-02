@@ -4,9 +4,19 @@
 }
 
 .box {
-    background: linear-gradient(to left, white 10%, #191970);
+    background: linear-gradient(to left, blue 10%, #191970);
 
 }
 h1{
     font-size: 40px;
+}
+.border-none{
+    border: none !important;
+}
+.icon{
+    width: 30px;
+    height:30px;
+}
+h3{
+    font-size:20px !important;
 }
