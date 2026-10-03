@@ -37,3 +37,18 @@ h3 {
 p {
     font-size: 15px;
 }
+
+.form-control-1 {
+    border-radius: 0px;
+    border: none;
+    border-bottom: #111111 1px solid;
+}
+
+.bg-navy {
+    background: #191970;
+    border-radius: 20px;
+}
+
+span {
+    font-size: 10px;
+}
