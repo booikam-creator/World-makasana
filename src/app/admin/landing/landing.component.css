@@ -3,23 +3,37 @@
 
 }
 
+.span {
+    font-size: 14px;
+}
+
 .box {
     background: linear-gradient(to left, blue 10%, #191970);
 
 }
-h1{
+
+.offcanvas-bottom {
+    height: 500px !important;
+
+}
+
+h1 {
     font-size: 40px;
 }
-.border-none{
+
+.border-none {
     border: none !important;
 }
-.icon{
-    width: 30px;
-    height:30px;
+
+.icon {
+    width: 30px !important;
+    height: 30px !important;
 }
-h3{
-    font-size:20px !important;
+
+h3 {
+    font-size: 20px !important;
 }
-p{
-    font-size:15px;
+
+p {
+    font-size: 15px;
 }

@@ -5,11 +5,27 @@
             <h1 class="text-center text">Expand your customer base and boost sales by partnering with Makazana</h1>
             <p class="text-center text-secondary text"> Receive, process, and track customer orders in real time</p>
             <div class="d-flex justify-content-center pt-3">
-                <button type="button" class="btn box border rounded-5 text-white p-2 px-4 ">GET STARTED</button>
+                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottomA"
+                    aria-controls="offcanvasBottom" class="btn box border rounded-5 text-white p-2 px-4 ">GET
+                    STARTED</button>
+            </div>
+
+            <div class="offcanvas rounded-top-4 offcanvas-bottom" height="600px" tabindex="-1" id="offcanvasBottomA"
+                aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-body vh-90 small">
+                    <div class="d-flex justify-content-end">
+                        <button data-bs-dismiss="offcanvas" type="button" class="btn border text-center icon p-0 rounded-circle">
+                            <i class="bi bi-x"></i>
+                        </button>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+
 <div class="container">
     <h2 class="text text-center">Why become a partener on Makazana?</h2>
 
@@ -61,10 +77,13 @@
         <div class="col-12 pb-3">
             <div class="card rounded-4 py-2 shadow-sm  bg-white s border-none" u data-bs-toggle="collapse"
                 data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                <h2 class="text">How frequently are sales revenues paid out?</h2>
+                <div class="card-header border-none py-2 bg-white">
+                    <h6 class="text">How frequently are sales revenues paid out?</h6>
+                </div>
                 <div class="collapse" id="collapseExample">
-                    <div class="card-body py-2">
-                        Merchants can select between Daily Automated Transfers (settled within 24 hours) or Weekly Automated Payouts directly into their corporate bank account 
+                    <div class="card-body text span py-2">
+                        Merchants can select between Daily Automated Transfers (settled within 24 hours) or Weekly
+                        Automated Payouts directly into their corporate bank account
                     </div>
                 </div>
             </div>
