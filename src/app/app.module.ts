@@ -27,6 +27,8 @@ import { MainComponent } from './pages/main/main.component';
 import { ReplacePipe } from './pipes/replace.pipe';
 import { ReatailComponent } from './components/reatail/reatail.component';
 import { LandingComponent } from './admin/landing/landing.component';
+import { VerifyComponent } from './pages/verify/verify.component';
+import { StepDetailComponent } from './admin/step-detail/step-detail.component';
 
 
 
@@ -43,6 +45,8 @@ import { LandingComponent } from './admin/landing/landing.component';
     ReplacePipe,
     ReatailComponent,
     LandingComponent,
+    VerifyComponent,
+    StepDetailComponent,
     
     
   ],
