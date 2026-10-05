@@ -1,5 +1,3 @@
-
-
 <div class="fixed-top shadow bg-white  container">
     <div class="d-flex py-3 align-items-center justify-content-between">
         <div class="logo bg-white" *ngIf="curUrl === 'home' || curUrl === 'landing'">
@@ -7,7 +5,8 @@
         </div>
         <div class="col" *ngIf="curUrl !== 'home' && curUrl !== 'landing'">
             <span class="text text-secondary card-title">Delivery To</span>
-            <h6 class="text col-6 mb-0 text-start text-truncate card-title" *ngIf="curUrl !== 'home' ">{{userLocation}}</h6>
+            <h6 class="text col-6 mb-0 text-start text-truncate card-title" *ngIf="curUrl !== 'home' ">{{userLocation}}
+            </h6>
         </div>
         <div class="d-flex  align-items-center just">
 
@@ -72,11 +71,18 @@
 
 <div class="offcanvas off pt-3 offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
     aria-labelledby="offcanvasBottomLabel">
+    <div class="container pt-3">
+        <div class="d-flex justify-content-end">
+            <button data-bs-dismiss="offcanvas" type="button" class="btn border text-center icon p-0 rounded-circle">
+                <i class="bi bi-x"></i>
+            </button>
 
+        </div>
+    </div>
     <div class="container">
 
+        <p class="text fw-bold text-center ">Existing Customers</p>
 
-        <p class="text mb-4">Existing Customers</p>
         <div class="form-floating mb-3">
             <input type="email" class="form-control-1 form-control" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">Email address*</label>
@@ -87,9 +93,13 @@
         </div>
 
         <button type="button" class="btn mb-2 text-white w-100 py-2 bg-navy">LOG IN</button>
-        <span>By using this website and/or placing an order you agree to the Terms & Conditions of MAKAZANA & CO.</span>
+        <div class="d-flex justify-content-center">
+            <span class="text-center">By using this website and/or placing an order you agree to the Terms & Conditions
+                of MAKAZANA & CO.</span>
+        </div>
         <div class="mt-5">
-            <h6 class="text">New Customers</h6>
+            <p class="text fw-bold text-center ">New Customers</p>
+
             <button type="button" class="btn mb-3 bg-navy w-100 py-2 bg-light">REGISTER NOW</button>
         </div>
     </div>
