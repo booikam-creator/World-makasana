@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component ,HostListener, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-step-detail',
@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class StepDetailComponent {
 
+  
 }
