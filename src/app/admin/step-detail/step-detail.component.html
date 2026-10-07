@@ -38,30 +38,44 @@
                     <label for="floatingInputLoc">Location Address* </label>
                 </div>
                 <div class="row">
-                    
                     <div class="col">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInputPos" placeholder="name@example.com">
-                            <label for="floatingInputPos">Postal Address </label>
+                            <input type="email" class="form-control" id="floatingInputPos"
+                                placeholder="name@example.com">
+                            <label for="floatingInputPos">Postal Code</label>
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="form-floating custom-bootstrap-float-select">
-                              <select class="form-select" id="locationSelect" aria-label="Number of locations">
-                                  <!-- Unselected state placeholder -->
-                                      <option value="" disabled hidden selected></option>
-                                          <!-- Options -->
-                                              <option value="1">I have one location</option>
-                                                  <option value="2">I have multiple locations</option>
-                                                    </select>
-                                                      <label for="locationSelect">Number of locations</label>
-                                                      </div>
+
                     </div>
                 </div>
+                <div class="select-container ">
+                    <!-- Trigger Box -->
+                    <div class="select-trigger rounded border bg-white " [class.open]="isOpen"
+                        [class.has-value]="selectedOption !== null" (click)="toggleDropdown()" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+
+                        <div class="label-container text-black">
+                            <span class="floating-label">Business Category*</span>
+                            <span class="selected-text">
+
+                            </span>
+                        </div>
+
+                        <!-- Chevron Icon -->
+                        <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+
+                    <ul class="dropdown-menu w-100">
+                        <li><a class="dropdown-item" >Action</a></li>
+                        <li><a class="dropdown-item">Another action</a></li>
+                        <li><a class="dropdown-item">Something else here</a></li>
+                    </ul>
+                </div>
             </div>
-
-
-
         </div>
     </div>
 </div>
