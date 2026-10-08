@@ -6,6 +6,7 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
 
+  apiLoc = 'https://maps.googleapis.com/maps/api/place/textsearch/'
   constructor(private http: HttpClient) { }
 
   getCityName(lat: number, lon: number): Observable<any> {
@@ -15,4 +16,11 @@ export class AuthService {
     const url = `https://us1.locationiq.com/v1/reverse.php?key=${apiKey}&lat=${lat}&lon=${lon}&format=json`;
     return this.http.get<any>(url);
   }
+  isgetAllCity() {
+
+    const apiKey = 'AIzaSyB6fF2enCVbR6_AzIVhD4WH6cUYrhkewHU';
+
+    return this.http.get<any>(`${this.apiLoc}json?query=cities+in+South+Africa&key=${apiKey}`)
+  }
+
 }

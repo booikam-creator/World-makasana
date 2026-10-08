@@ -12,32 +12,90 @@ export interface SelectOption {
   styleUrl: './step-detail.component.css'
 })
 export class StepDetailComponent {
-  label = 'Number of locations';
+
+  business = {
+    name: '',
+    address: '',
+    city: '',
+    categoryBus: ''
+  }
+
+  busiCategories = [
+
+    {
+      name:'restaurants'
+    },
+    {
+      name:'grocery'
+    },
+    {
+      name:'general merchant'
+    },
+    {
+      name:'other'
+    },
+    {
+      name:'services'
+    }
+  ]
   options: SelectOption[] = [
     { label: 'I have one location', value: 'one' },
     { label: 'I have multiple locations', value: 'multiple' }
   ];
 
-  isOpen = false;
+  isOpenCity = false;
+  isOpenCate = false
   selectedOption: SelectOption | null = null;
 
   constructor(private elementRef: ElementRef) { }
 
   toggleDropdown(): void {
-    this.isOpen = !this.isOpen;
+    this.isOpenCity = !this.isOpenCity;
+  }
+  toggleCate() {
+    this.isOpenCate = !this.isOpenCate
   }
 
-  selectOption(option: SelectOption): void {
-    this.selectedOption = option;
-    this.isOpen = false;
+  selectOption(option: any): void {
+    this.business.city = option;
+    this.isOpenCity = false;
+  }
+  seleCate(option: any) {
+
+    this.business.categoryBus = option
+    this.isOpenCate = false
   }
 
-  // Close dropdown when clicking outside
-  @HostListener('document:click', ['$event'])
-  onClickOutside(event: Event): void {
-    if (!this.elementRef.nativeElement.contains(event.target)) {
-      this.isOpen = false;
-    }
-  }
+
+
+
+
+ cities = [
+  "Cape Town",
+  "Johannesburg",
+  "Durban",
+  "Pretoria",
+  "Gqeberha",
+  "Bloemfontein",
+  "Mbombela",
+  "Polokwane",
+  "Kimberley",
+  "Makhanda ",
+  "East London",
+  "Pietermaritzburg",
+  "Stellenbosch",
+  "Paarl",
+  "George",
+  "Knysna",
+  "Plettenberg Bay",
+  "Hermanus",
+  "Rustenburg",
+  "Potchefstroom",
+  "Upington",
+  "Richards Bay",
+  "Centurion",
+  "Klerksdorp",
+  "Mthatha"
+];
+                                                    
 }
-
