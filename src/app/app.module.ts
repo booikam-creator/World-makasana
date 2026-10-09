@@ -10,7 +10,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatSelectModule} from '@angular/material/select';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatCardModule} from '@angular/material/card';
-
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,6 +29,7 @@ import { ReatailComponent } from './components/reatail/reatail.component';
 import { LandingComponent } from './admin/landing/landing.component';
 import { VerifyComponent } from './pages/verify/verify.component';
 import { StepDetailComponent } from './admin/step-detail/step-detail.component';
+import { StepPersonComponent } from './admin/step-person/step-person.component';
 
 
 
@@ -47,6 +48,7 @@ import { StepDetailComponent } from './admin/step-detail/step-detail.component';
     LandingComponent,
     VerifyComponent,
     StepDetailComponent,
+    StepPersonComponent,
     
     
   ],
@@ -60,6 +62,7 @@ import { StepDetailComponent } from './admin/step-detail/step-detail.component';
     MatFormFieldModule,
     MatIconModule,
     MatTabsModule,
+    MatDatepickerModule,
     MatSelectModule,
     MatProgressSpinnerModule,
     MatCardModule,

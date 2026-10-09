@@ -9,6 +9,7 @@ import { MainComponent } from './pages/main/main.component';
 import { LandingComponent } from './admin/landing/landing.component';
 import { VerifyComponent } from './pages/verify/verify.component';
 import { StepDetailComponent } from './admin/step-detail/step-detail.component';
+import { StepPersonComponent } from './admin/step-person/step-person.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path:'landing', component:LandingComponent},
   {path:'verify',component:VerifyComponent},
   {path:'step',  component:StepDetailComponent},
+  {path:'person', component:StepPersonComponent},
   {
     path: 'account',
   //  canActivate: [signinGuard],
